@@ -4,7 +4,7 @@
 ---
 # Hello World
 ## Hello World
-[Link](http://miranda-y-zhou.github.io/cse15l-lab-reports/)
+[Link](http://miranda-y-zhou.github.io/cse15l-lab-reports/Anotherfile.html)
 ![Image](https://upload.wikimedia.org/wikipedia/commons/c/cb/The_Blue_Marble_%28remastered%29.jpg)
 > Hello
 * Hi
