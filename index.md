@@ -7,7 +7,7 @@ Miranda Zhou
 ---
 
 ## Labs
-Week 1: [Markdown](https://miranda-y-zhou.github.io/cse15l-lab-reports/AnotherFile.html)
+Week 1: [Markdown](https://miranda-y-zhou.github.io/cse15l-lab-reports/Anotherfile.html)
 
 ---
 
