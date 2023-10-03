@@ -16,5 +16,13 @@ This lab is about the basic filesystem commands.
 
 ### Command: `ls`
 
+#### `ls` with no arguments
+#### `ls` with a path to a directory as an argument
+#### `ls` with a path to a file as an argument
+
 ### Command: `cat`
+
+#### `cat` with no arguments
+#### `cat` with a path to a directory as an argument
+#### `cat` with a path to a file as an argument
 
