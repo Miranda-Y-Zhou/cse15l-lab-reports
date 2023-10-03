@@ -10,6 +10,10 @@ This lab is about the basic filesystem commands.
 
 ### Command: `cd`
 
+#### `cd` with no arguments
+#### `cd` with a path to a directory as an argument
+#### `cd` with a path to a file as an argument
+
 ### Command: `ls`
 
 ### Command: `cat`
