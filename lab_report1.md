@@ -43,7 +43,7 @@ When no argument is provided by the user, it defaults to taking the user to thei
 
 #### 2. `cd` with a path to a directory as an argument
 
-When the command `cd` is given a directory as an argument, no visiable output is given by the terminal, and `cd` will change the current working directory to the specified directory path.
+When the command `cd` is given a directory as an argument, `cd` will change the current working directory to the specified directory path, and no visiable output is given by the terminal.
 
 As shown in the example below, the terminal does not give an output but the working directory changed from the current working directory `/home` to the specified directory `/home/lecture1/messages`.
 
