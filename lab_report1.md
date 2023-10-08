@@ -170,6 +170,8 @@ ls: cannot access 'lecture1/messages/a.txt': No such file or directory
 
 When the `cat` command is used with no argument, the terminal waits for user input from the keyboard. 
 
+As shown in the example below (working directory: `/home`), after `cat` command is given with no argument. The command will appear to wait. It's not frozen. 
+
 ```
 [user@sahara ~]$ pwd
 /home
@@ -190,7 +192,20 @@ orange
 ▋
 ```
 
-To exit this input state and return to the command prompt, the user can signal an end-of-file by pressing Ctrl + D. This mode allows users to provide content directly from the terminal.
+To exit this input state and return to the command prompt, the user can signal an end-of-file by pressing Ctrl + D. 
+
+```
+[user@sahara ~]$ pwd
+/home
+[user@sahara ~]$ cat
+apple
+apple
+orange
+orange
+[user@sahara ~]$
+```
+
+This mode allows users to provide content directly from the terminal. The output is not an error.
 
 #### 2. `cat` with a path to a directory as an argument
 
