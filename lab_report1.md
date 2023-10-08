@@ -174,12 +174,21 @@ When the `cat` command is used with no argument, the terminal waits for user inp
 [user@sahara ~]$ pwd
 /home
 [user@sahara ~]$ cat
-🁢
+▋
 ```
 
 Anything typed is immediately echoed back to the terminal upon pressing Enter. 
 
-
+```
+[user@sahara ~]$ pwd
+/home
+[user@sahara ~]$ cat
+apple
+apple
+orange
+orange
+▋
+```
 
 To exit this input state and return to the command prompt, the user can signal an end-of-file by pressing Ctrl + D. This mode allows users to provide content directly from the terminal.
 
@@ -187,14 +196,5 @@ To exit this input state and return to the command prompt, the user can signal a
 
 #### 3. `cat` with a path to a file as an argument
 
-
-⏐
-⎟
-⎜
-⎥
-⎪
-🁢
-|
-|
 
 
