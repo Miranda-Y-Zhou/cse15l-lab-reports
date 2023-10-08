@@ -1,7 +1,7 @@
 # Lab Report 1 
 [Miranda Zhou](https://github.com/Miranda-Y-Zhou)
 
-<p>Date: 10/08/2023<span style="color:blue">some *blue* text</span><p>
+Date: 10/08/2023
 
 ---
 
