@@ -1,7 +1,7 @@
 # Lab Report 1 
 [Miranda Zhou](https://github.com/Miranda-Y-Zhou)
 
-Date: 10/09/2023
+Date: 10/08/2023
 
 ---
 
