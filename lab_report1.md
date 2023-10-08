@@ -10,9 +10,16 @@ This lab is about the basic filesystem commands.
 
 ---
 
-### Command: `cd`
+### Change Directory Command: `cd`
 
 #### `cd` with no arguments
+
+When the command `cd` is used without any arguments, no visiable output is given by the terminal, as shown below.
+
+`[user@sahara ~]$ cd `
+
+`[user@sahara ~]$ `
+
 
 #### `cd` with a path to a directory as an argument
 
