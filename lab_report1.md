@@ -166,10 +166,35 @@ ls: cannot access 'lecture1/messages/a.txt': No such file or directory
 
 ### Concatenate Command: `cat`
 
-#### 1. `cat` with no arguments
+#### 1. `cat` with no arguments 
+
+When the `cat` command is used with no argument, the terminal waits for user input from the keyboard. 
+
+```
+[user@sahara ~]$ pwd
+/home
+[user@sahara ~]$ cat
+🁢
+```
+
+Anything typed is immediately echoed back to the terminal upon pressing Enter. 
+
+
+
+To exit this input state and return to the command prompt, the user can signal an end-of-file by pressing Ctrl + D. This mode allows users to provide content directly from the terminal.
 
 #### 2. `cat` with a path to a directory as an argument
 
 #### 3. `cat` with a path to a file as an argument
+
+
+⏐
+⎟
+⎜
+⎥
+⎪
+🁢
+|
+|
 
 
