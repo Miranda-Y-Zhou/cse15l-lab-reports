@@ -56,7 +56,7 @@ As shown in the example below, the terminal does not give an output but the work
 ```
 
 If the directory exists, there won't be any error.
-If the directory given as an argument does not exist, an error will be produced as the computer cannot find such directory. 
+If the argument given is a directory that does not exist, an error will be produced as the computer cannot find such directory.
 
 Error example:
 
@@ -94,7 +94,7 @@ An error is given because the `cd` command expects a directory path. If a file p
 
 When the command `ls` is used without any arguments, `ls` lists the contents of the current working directory. 
 
-In the example below, the current directory is `/home`, thus `ls` outputs the content of `/home`, which is a folder named `lecture1`. 
+In the example below, the current working directory is `/home`, thus `ls` outputs the content of `/home`, which is a folder named `lecture1`. 
 
 ```
 [user@sahara ~]$ pwd
@@ -108,6 +108,30 @@ When no argument is provided by the user, it defaults to current working directo
 &nbsp;
 
 #### 2. `ls` with a path to a directory as an argument
+
+When the command `ls` is used with a path to a directory as an argument, `ls` lists the contents of the specified working directory.
+
+In the example below, `ls` outputs the content of the directory `messages`, which are four `.txt` files. The current directory will not be affected. 
+
+```
+[user@sahara ~]$ pwd
+/home
+[user@sahara ~]$ ls lecture1/messages
+en-us.txt  es-mx.txt  fr-ca.txt  zh-cn.txt
+[user@sahara ~]$ pwd
+/home
+```
+If the directory exists, there won't be any error.
+If the argument given is a directory that does not exist, an error will be produced as the computer cannot find such directory. 
+
+Error example:
+
+```
+[user@sahara ~]$ ls lecture1/messag
+ls: cannot access 'lecture1/messag': No such file or directory
+```
+
+&nbsp;
 
 #### 3. `ls` with a path to a file as an argument
 
