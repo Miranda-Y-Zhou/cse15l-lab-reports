@@ -25,7 +25,7 @@ When the command `cd` is used without any arguments, no visiable output is given
 [user@sahara ~]$
 ```
 
-But you'll be taken to the user's home directory, if the current directory is not `/home`. 
+But the user will be taken to the user's home directory, if the current directory is not `/home`. 
 
 As shown in the example below, the working directory before running the command is `/home/lecture1`, and after running the command it became `/home`.
 
@@ -62,7 +62,22 @@ If the directory given as an argument does not exist, an error will be produced 
 
 #### 3. `cd` with a path to a file as an argument
 
+When the command `cd` is given a path to a file as an argument, the working directory will not change and the terminal will output an error message. 
 
+As shown in the example below, the working directory stayed as `/home`, and an error message `bash: cd: lecture1/messages/fr-ca.txt: Not a directory` was given. 
+
+```
+[user@sahara ~]$ pwd
+/home
+[user@sahara ~]$ cd lecture1/messages/fr-ca.txt
+bash: cd: lecture1/messages/fr-ca.txt: Not a directory
+[user@sahara ~]$ pwd
+/home
+```
+
+An error is given because the `cd` command expects a directory path. If a file path was provided, it will return an error since the user cannot change the working directory to a file.
+
+&nbsp;
 
 ---
 
