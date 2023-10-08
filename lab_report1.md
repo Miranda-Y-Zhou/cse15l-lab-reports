@@ -58,6 +58,13 @@ As shown in the example below, the terminal does not give an output but the work
 If the directory exists, there won't be any error.
 If the directory given as an argument does not exist, an error will be produced as the computer cannot find such directory. 
 
+Error example:
+
+```
+[user@sahara ~]$ cd lecture1/messag
+bash: cd: lecture1/messag: No such file or directory
+```
+
 &nbsp;
 
 #### 3. `cd` with a path to a file as an argument
