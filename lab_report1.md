@@ -135,6 +135,33 @@ ls: cannot access 'lecture1/messag': No such file or directory
 
 #### 3. `ls` with a path to a file as an argument
 
+When the command `ls` is used with a path to a file as an argument, it will just echo back the file path if the file exists. This is because `ls`'s primary function is to list the contents of a directory. When the user provide it a directory path, it does just that —- it lists everything inside that directory. 
+
+However, when the user give `ls` a specific file path, there's technically only the file itself at that location. Therefore, `ls` only needs to confirm the existence of that one file. So, it "lists" that one file, which in practice means echoing back the file path.
+
+As shown in the example below, when the file path to `fr-ca.txt` is given as an argument, the terminal outputs the file path of the specified file as given, which is `lecture1/messages/fr-ca.txt` in this case, confirming its existence. Again, `ls` does not affect the working directory, which stays `/home`.
+
+```
+[user@sahara ~]$ pwd
+/home
+[user@sahara ~]$ ls lecture1/messages/fr-ca.txt
+lecture1/messages/fr-ca.txt
+[user@sahara ~]$ pwd
+/home
+```
+
+If the file path specified exists, there won't be any error.
+If the argument given is a file path that does not exist, an error will be produced as the computer cannot find such file following the provided path. 
+
+Error example:
+
+```
+[user@sahara ~]$ ls lecture1/messages/a.txt
+ls: cannot access 'lecture1/messages/a.txt': No such file or directory
+```
+
+&nbsp;
+
 ---
 
 ### Concatenate Command: `cat`
