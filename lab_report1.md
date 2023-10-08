@@ -55,8 +55,8 @@ As shown in the example below, the terminal does not give an output but the work
 /home/lecture1/messages
 ```
 
-If the directory exists, there won't be any visible output. 
-If the directory given as an argument does not exist, an error will be produced. 
+If the directory exists, there won't be any error.
+If the directory given as an argument does not exist, an error will be produced as the computer cannot find such directory. 
 
 #### 3. `cd` with a path to a file as an argument
 
