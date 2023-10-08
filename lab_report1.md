@@ -251,7 +251,7 @@ Error example:
 cat: lecture1/messages/fe-ca.txt: No such file or directory
 ```
 
-Non-text files example (only a few parts):
+Non-text files example (only showing a few sections below):
 
 ```
 [user@sahara ~]$ cat image1.png
