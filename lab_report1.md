@@ -8,9 +8,9 @@ Date: 10/09/2023
 ## FileSystem (Week 1)
 This lab is about the basic filesystem commands:
 
-* Change Directory Command: `cd`
-* List Command: `ls`
-* Concatenate Command: `cat`
+* [Change Directory Command: `cd`](https://miranda-y-zhou.github.io/cse15l-lab-reports/lab_report1.html#change-directory-command-cd)
+* [List Command: `ls`](https://miranda-y-zhou.github.io/cse15l-lab-reports/lab_report1.html#list-command-ls)
+* [Concatenate Command: `cat`](https://miranda-y-zhou.github.io/cse15l-lab-reports/lab_report1.html#concatenate-command-cat)
 
 ---
 
