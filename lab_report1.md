@@ -25,7 +25,7 @@ When the command `cd` is used without any arguments, no visiable output is given
 [user@sahara ~]$
 ```
 
-But the user will be taken to the user's home directory, if the current directory is not `/home`. 
+But the user will be taken to the user's home directory, if the current directory is not already the home directory. 
 
 As shown in the example below, the working directory before running the command is `/home/lecture1`, and after running the command it became `/home`.
 
@@ -37,7 +37,7 @@ As shown in the example below, the working directory before running the command 
 /home
 ```
 
-When no argument is provided by the user, it defaults to taking the user to their home directory. This output is not an error but a feature designed to quickly get back to the home directory.
+When no argument is provided by the user, it defaults to taking the user to their home directory. It is a feature designed to quickly get back to the home directory. The output is not an error.
 
 &nbsp;
 
@@ -90,20 +90,35 @@ An error is given because the `cd` command expects a directory path. If a file p
 
 ### List Command: `ls`
 
-#### `ls` with no arguments
+#### 1. `ls` with no arguments
 
-#### `ls` with a path to a directory as an argument
+When the command `ls` is used without any arguments, `ls` lists the contents of the current working directory. 
 
-#### `ls` with a path to a file as an argument
+In the example below, the current directory is `/home`, thus `ls` outputs the content of `/home`, which is a folder named `lecture1`. 
+
+```
+[user@sahara ~]$ pwd
+/home
+[user@sahara ~]$ ls
+lecture1
+```
+
+When no argument is provided by the user, it defaults to current working directory. The output is not an error. 
+
+&nbsp;
+
+#### 2. `ls` with a path to a directory as an argument
+
+#### 3. `ls` with a path to a file as an argument
 
 ---
 
 ### Concatenate Command: `cat`
 
-#### `cat` with no arguments
+#### 1. `cat` with no arguments
 
-#### `cat` with a path to a directory as an argument
+#### 2. `cat` with a path to a directory as an argument
 
-#### `cat` with a path to a file as an argument
+#### 3. `cat` with a path to a file as an argument
 
 
