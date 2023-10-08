@@ -211,7 +211,18 @@ This mode allows users to provide content directly from the terminal. The output
 
 #### 2. `cat` with a path to a directory as an argument
 
-When the `cat` command is used with a path to a directory as an argument, 
+When the `cat` command is used with a path to a directory as an argument, the terminal will output an error message. 
+
+As shown in the example below (working directory: `/home`), an error message `cat: lecture1/messages: Is a directory` was given.
+
+```
+[user@sahara ~]$ pwd
+/home
+[user@sahara ~]$ cat lecture1/messages
+cat: lecture1/messages: Is a directory
+```
+
+The `cat` command expects a file path to display its contents. When provided a directory path, it will return an error. 
 
 &nbsp;
 
