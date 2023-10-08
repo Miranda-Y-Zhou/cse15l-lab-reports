@@ -222,11 +222,35 @@ As shown in the example below (working directory: `/home`), an error message `ca
 cat: lecture1/messages: Is a directory
 ```
 
-The `cat` command is designed to read and display the contents of files, which expects a file path. When provided a directory path, it will return an error. 
+The `cat` command is designed to read and display the contents of files, which expects a file path. When provided a directory pathq, it will return an error. 
 
 &nbsp;
 
 #### 3. `cat` with a path to a file as an argument
 
+When the `cat` command is used with a path to a file as an argument, `cat` reads and displays the contents of that file to the terminal in order. 
+
+As shown in the example below (working directory: `/home`), `cat` printed out the content of the file `fr-ca.txt` into the terminal, which is `Bonjour le monde!`.
+
+```
+[user@sahara ~]$ pwd
+/home
+[user@sahara ~]$ cat lecture1/messages/fr-ca.txt
+Bonjour le monde!
+```
+
+For text files, this results in showing the contained text. However, when used on non-text files, `cat` will still attempt to read and display the contents, but the result might be unreadable characters.
+
+Non-text files example:
 
 
+
+If the file path specified exists, there won't be any error.
+If the argument given is a file path that does not exist, an error will be produced as the computer cannot find such file following the provided path. 
+
+Error example:
+
+```
+[user@sahara ~]$ cat lecture1/messages/fe-ca.txt
+cat: lecture1/messages/fe-ca.txt: No such file or directory
+```
