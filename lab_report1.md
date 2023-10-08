@@ -26,7 +26,10 @@ When the command `cd` is used without any arguments, no visiable output is given
 
 But you'll be taken to the user's home directory, if the current directory is not `/home`. 
 
-As shown in the example below, the working directory before running the command is `/lecture1`, and after running the command it became `/home`.
+&nbsp;
+
+
+As shown in the example below, the working directory before running the command is `/home/lecture1`, and after running the command it became `/home`.
 
 `[user@sahara ~/lecture1]$ pwd`
 
