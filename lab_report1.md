@@ -22,7 +22,7 @@ When the command `cd` is used without any arguments, no visiable output is given
 
 ```
 [user@sahara ~]$ cd 
-[user@sahara ~]$
+[user@sahara ~]$ ▋
 ```
 
 But the user will be taken to the user's home directory, if the current directory is not already the home directory. 
@@ -202,12 +202,18 @@ apple
 apple
 orange
 orange
-[user@sahara ~]$
+[user@sahara ~]$ ▋
 ```
 
 This mode allows users to provide content directly from the terminal. The output is not an error.
 
+&nbsp;
+
 #### 2. `cat` with a path to a directory as an argument
+
+When the `cat` command is used with a path to a directory as an argument, 
+
+&nbsp;
 
 #### 3. `cat` with a path to a file as an argument
 
