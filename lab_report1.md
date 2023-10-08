@@ -6,7 +6,11 @@ Date: 10/09/2023
 ---
 
 ## Remote Access and FileSystem (Week 1)
-This lab is about the basic filesystem commands.
+This lab is about the basic filesystem commands:
+
+* Change Directory Command: `cd`
+* List Command: `ls`
+* Concatenate Command: `cat`
 
 ---
 
@@ -20,6 +24,19 @@ When the command `cd` is used without any arguments, no visiable output is given
 
 `[user@sahara ~]$ `
 
+But you'll be taken to the user's home directory, if the current directory is not `/home`. 
+
+As shown in the example below, the working directory before running the command is `/lecture1`, and after running the command it became `/home`.
+
+`[user@sahara ~/lecture1]$ pwd`
+
+`/home/lecture1`
+
+`[user@sahara ~]$ cd `
+
+`[user@sahara ~]$ pwd`
+
+`/home`
 
 #### `cd` with a path to a directory as an argument
 
@@ -27,7 +44,7 @@ When the command `cd` is used without any arguments, no visiable output is given
 
 ---
 
-### Command: `ls`
+### List Command: `ls`
 
 #### `ls` with no arguments
 
@@ -37,7 +54,7 @@ When the command `cd` is used without any arguments, no visiable output is given
 
 ---
 
-### Command: `cat`
+### Concatenate Command: `cat`
 
 #### `cat` with no arguments
 
