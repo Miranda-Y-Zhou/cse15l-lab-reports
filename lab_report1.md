@@ -16,7 +16,7 @@ This lab is about the basic filesystem commands:
 
 ### Change Directory Command: `cd`
 
-#### `cd` with no arguments
+#### 1. `cd` with no arguments
 
 When the command `cd` is used without any arguments, no visiable output is given by the terminal, as shown below.
 
@@ -38,9 +38,9 @@ As shown in the example below, the working directory before running the command 
 
 `/home`
 
-#### `cd` with a path to a directory as an argument
+#### 2. `cd` with a path to a directory as an argument
 
-#### `cd` with a path to a file as an argument
+#### 3. `cd` with a path to a file as an argument
 
 ---
 
