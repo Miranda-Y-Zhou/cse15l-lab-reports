@@ -39,11 +39,26 @@ As shown in the example below, the working directory before running the command 
 /home
 ```
 
+When no argument is provided by the user, it defaults to taking the user to their home directory. This output is not an error but a feature designed to quickly get back to the home directory.
+
 &nbsp;
 
-When cd is used without any arguments, it defaults to taking the user to their home directory. This output is not an error but a feature designed to quickly get back to the home directory.
-
 #### 2. `cd` with a path to a directory as an argument
+
+When the command `cd` is given a directory as an argument, no visiable output is given by the terminal, and `cd` will change the current working directory to the specified directory path.
+
+As shown in the example below, the terminal does not give an output but the working directory changed from the current working directory `/home` to the specified directory `/home/lecture1/messages`.
+
+```
+[user@sahara ~]$ pwd
+/home
+[user@sahara ~]$ cd lecture1/messages
+[user@sahara ~/lecture1/messages]$ pwd
+/home/lecture1/messages
+```
+
+If the directory exists, there won't be any visible output. 
+If the directory given as an argument does not exist, an error will be produced. 
 
 #### 3. `cd` with a path to a file as an argument
 
