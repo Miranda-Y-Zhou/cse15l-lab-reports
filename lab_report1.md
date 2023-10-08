@@ -5,7 +5,7 @@ Date: 10/09/2023
 
 ---
 
-## Remote Access and FileSystem (Week 1)
+## FileSystem (Week 1)
 This lab is about the basic filesystem commands:
 
 * Change Directory Command: `cd`
@@ -31,9 +31,8 @@ But you'll be taken to the user's home directory, if the current directory is no
 
 As shown in the example below, the working directory before running the command is `/home/lecture1`, and after running the command it became `/home`.
 
-[user@sahara ~/lecture1]$ pwd
-
 ```
+[user@sahara ~/lecture1]$ pwd
 /home/lecture1
 [user@sahara ~]$ cd 
 [user@sahara ~]$ pwd
@@ -42,7 +41,7 @@ As shown in the example below, the working directory before running the command 
 
 &nbsp;
 
-When cd is used without any arguments, it defaults to taking the user to their home directory. This is a feature designed to quickly get back to the home directory.
+When cd is used without any arguments, it defaults to taking the user to their home directory. This output is not an error but a feature designed to quickly get back to the home directory.
 
 #### 2. `cd` with a path to a directory as an argument
 
