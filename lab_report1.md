@@ -20,26 +20,29 @@ This lab is about the basic filesystem commands:
 
 When the command `cd` is used without any arguments, no visiable output is given by the terminal, as shown below.
 
-`[user@sahara ~]$ cd `
-
-`[user@sahara ~]$ `
+```
+[user@sahara ~]$ cd 
+[user@sahara ~]$
+```
 
 But you'll be taken to the user's home directory, if the current directory is not `/home`. 
 
 &nbsp;
 
-
 As shown in the example below, the working directory before running the command is `/home/lecture1`, and after running the command it became `/home`.
 
-`[user@sahara ~/lecture1]$ pwd`
+[user@sahara ~/lecture1]$ pwd
 
-`/home/lecture1`
+```
+/home/lecture1
+[user@sahara ~]$ cd 
+[user@sahara ~]$ pwd
+/home
+```
 
-`[user@sahara ~]$ cd `
+&nbsp;
 
-`[user@sahara ~]$ pwd`
-
-`/home`
+When cd is used without any arguments, it defaults to taking the user to their home directory. This is a feature designed to quickly get back to the home directory.
 
 #### 2. `cd` with a path to a directory as an argument
 
