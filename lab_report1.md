@@ -251,7 +251,7 @@ Error example:
 cat: lecture1/messages/fe-ca.txt: No such file or directory
 ```
 
-Non-text files example:
+Non-text files example (only a few parts):
 
 ```
 [user@sahara ~]$ cat image1.png
@@ -263,25 +263,9 @@ IHDR
 �S@d�w0��+�bb"������u�튃L�����4��H
 ��^>���xbI!Do>�P,ðmL�2���U2���{�>ql�� �r��,�.A�Q�˂j};
 ��B�
-�}��'�!N����!��33~����fƐ&��5�s�PX ��N�?���-?O:�
-�6Kɟ�J�qe��KsYJ����RS+�NH���)c����D�?j�+`Ú]�����p�
-�E�0)
-b5�
-r�Õ>����Q�>i�,
-�����>V�)�S���
-�۔-�D)�����PE}�6W�?�
-vI b%�
-R"��)��=���:ąq��8U�����y!2�
-bׂ�x�X<�.H�>�).�IP���p�b��KA`�@�R�2�D������J�
-�@��8(����<ƃb�'DP04.@�+E��:�*� S�[$�
-�@��A���G���%�ǐ�#:6�76Y�����
 
-2JF:�
-�>�I
-"C��D[��Žx���g➃���OxB�$<$\#tnM�H~�2tA�`e-2~�n5����Ce\7�+����`d7Ȳ�y˪��I�o3��n(�(N�2��O��y����ې���?�G�k�P��C=?�g�P}><����-��cg��9�0�1�k
-�YY%�z,_]������B�?�
-NFUF��[�{�����|�O3}2�g>���Z�Փ��]��+d
-�ۥ6�_��|�*�>LN����є��vSN}Z\��4|oZ�t��s�?����y&23cf�,�Y�fu���cuN���K�J�����<�e�Ѽ����Km�Z����|��
+...
+
 ASCIIScreenshot6ӓ
 pHYs%%IR$��iTXtXML:com.adobe.xmp<x:xmpmeta xmlns:x="adobe:ns:meta/" x:xmptk="XMP Core 6.0.0">
    <rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
@@ -294,8 +278,9 @@ pHYs%%IR$��iTXtXML:com.adobe.xmp<x:xmpmeta xmlns:x="adobe:ns:meta/" x:xmptk=
    </rdf:RDF>
 </x:xmpmeta>
 �X�KiDOT(�[�^��IDAT(�
-PU���ze�eL�p�H�[0n�Ӕ���dr`L�Mr��v����QX4���%�fv�$�F���"-��IDAT-��D���Rmbz�@?����Y���ԜC)M)#>��dK'��K>B�T�Zu��CŖ�*�⪤��
-����MjF�������y��<�[x_��@�V؂��Ȩ{����۾����넚�~�R���_n�<B���IEND�B`�
+PU���ze�eL�p�H�[0n�Ӕ���dr`L�Mr��v����QX4���%�fv�$�F���"-��IDAT-��D���Rmbz�@?����Y���ԜC)M)
+
+...
 ```
 
 &nbsp;
