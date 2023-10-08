@@ -222,7 +222,7 @@ As shown in the example below (working directory: `/home`), an error message `ca
 cat: lecture1/messages: Is a directory
 ```
 
-The `cat` command expects a file path to display its contents. When provided a directory path, it will return an error. 
+The `cat` command is designed to read and display the contents of files, which expects a file path. When provided a directory path, it will return an error. 
 
 &nbsp;
 
