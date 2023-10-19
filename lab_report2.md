@@ -11,9 +11,9 @@ The objective of this lab is to create a Java web server, `StringServer`, to acc
 This lab also delve into SSH key authentication, showcasing a password-less login to `ieng6`, followed by reflections on the learnings from weeks 2 and 3.
 
 
-* [Web Server: StringServer]()
-* [SSH Key]()
-* [Learning Reflection]()
+* [Web Server: `StringServer`](https://miranda-y-zhou.github.io/cse15l-lab-reports/lab_report2.html#string-server)
+* [SSH Key](https://miranda-y-zhou.github.io/cse15l-lab-reports/lab_report2.html#ssh-key)
+* [Learning Reflection](https://miranda-y-zhou.github.io/cse15l-lab-reports/lab_report2.html#learning-reflection)
 
 ---
 
@@ -25,7 +25,7 @@ This lab also delve into SSH key authentication, showcasing a password-less logi
 
 ---
 
-### SSH Key
+### SSH Key Authentication
 
 
 
