@@ -70,13 +70,23 @@ class StringServer {
 }
 ```
 
+#### Example 1:
+
+#### Example 2:
+
+#### Example 3:
+
 &nbsp;
 
 ---
 
 ### SSH Key Authentication
 
+#### 1. Locating the private key on local computer:
 
+#### 2. Locating the public key on `ieng6`:
+
+#### 3. Logging into `ieng6` without password:
 
 &nbsp;
 
