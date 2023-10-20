@@ -72,9 +72,15 @@ class StringServer {
 }
 ```
 
+&nbsp;
+
 #### Example 1:
 
+&nbsp;
+
 #### Example 2:
+
+&nbsp;
 
 #### Example 3:
 
@@ -84,9 +90,15 @@ class StringServer {
 
 ### SSH Key Authentication
 
+SSH key authentication is a secure method for remote server access, utilizing a pair of cryptographic keys: a private key kept by the user and a public key stored on the server. Instead of using passwords, the server confirms the identity of the user by challenging them to prove ownership of the private key. This method enhances security, and facilitates password-less logins.
+
 #### 1. Locating the private key on local computer:
 
+&nbsp;
+
 #### 2. Locating the public key on `ieng6`:
+
+&nbsp;
 
 #### 3. Logging into `ieng6` without password:
 
