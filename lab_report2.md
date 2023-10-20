@@ -19,7 +19,56 @@ This lab also delve into SSH key authentication, showcasing a password-less logi
 
 ### String Server
 
+The `StringServer` is a Java web server designed to maintain a running string of messages. Users can add messages via incoming requests, and each message gets prefixed with a sequential number. When accessed without a specific query in the URL, the server displays the accumulated list of messages to the user.
 
+```
+import java.io.IOException;
+import java.net.URI;
+
+class Handler implements URLHandler {
+    // The one bit of state on the server: a number that will be manipulated by
+    // various requests.
+
+    // num is the current number of messages in the server
+    int num = 0;
+    String allMessages = "";
+
+    public String handleRequest(URI url) {
+        if (url.getPath().equals("/")) {
+            return "Current messages:" + '\n' + allMessages;
+        } 
+        else {
+            if (url.getPath().contains("/add-message")) {
+                String[] parameters = url.getQuery().split("=");
+                if (parameters[0].equals("s")) {
+                    num += 1;
+                    allMessages = allMessages + String.format("\n %d. %s", num, parameters[1]);
+                    return String.format("The message '%s' is successfully added!", parameters[1]);
+                }
+            }
+            else {
+                return "/add-message requires a valid query that begins with '?s=<string>'" + 
+                        "\n Example: /add-message?s=Hello" + 
+                        "\n The page would show: 1. Hello";
+            }
+            return "404 Not Found!";
+        }
+    }
+}
+
+class StringServer {
+    public static void main(String[] args) throws IOException {
+        if(args.length == 0){
+            System.out.println("Missing port number! Try any number between 1024 to 49151");
+            return;
+        }
+
+        int port = Integer.parseInt(args[0]);
+
+        Server.start(port, new Handler());
+    }
+}
+```
 
 &nbsp;
 
