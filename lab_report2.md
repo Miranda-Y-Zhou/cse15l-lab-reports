@@ -3,7 +3,7 @@
 
 Date: 10/22/2023
 
-Back to [cse15l-lab-reports](https://miranda-y-zhou.github.io/cse15l-lab-reports/)
+Back to [index](https://miranda-y-zhou.github.io/cse15l-lab-reports/)
 
 ---
 
@@ -49,7 +49,7 @@ class Handler implements URLHandler {
                 }
             }
             else {
-                return "/add-message requires a valid query that begins with '?s=<string>'" + 
+                return "ERROR: /add-message requires a valid query that begins with '?s=<string>'" + 
                         "\n Example: /add-message?s=Hello" + 
                         "\n The page would show: 1. Hello";
             }
@@ -74,15 +74,21 @@ class StringServer {
 
 &nbsp;
 
-#### Example 1:
+#### Example 1: 
 
 &nbsp;
 
-#### Example 2:
+#### Example 2: 
 
 &nbsp;
 
-#### Example 3:
+#### Example 3: 
+
+When the user tries to add a string message, but without following the correct query syntax:
+
+
+
+This is because the server `StringServer` has been programmed to expect a specific query structure for adding messages. If the incoming request doesn't adhere to this expected format, the server is designed to recognize the discrepancy and respond with an error message to inform the user of the incorrect input. This ensures that users adhere to the expected input pattern and that the server remains resilient against unintended or malicious inputs.
 
 &nbsp;
 
@@ -90,17 +96,23 @@ class StringServer {
 
 ### SSH Key Authentication
 
-SSH key authentication is a secure method for remote server access, utilizing a pair of cryptographic keys: a private key kept by the user and a public key stored on the server. Instead of using passwords, the server confirms the identity of the user by challenging them to prove ownership of the private key. This method enhances security, and facilitates password-less logins.
+SSH key authentication is a secure method for remote server access, utilizing a pair of cryptographic keys: a private key kept by the user and a public key stored on the server. Instead of using passwords, the server confirms the identity of the user by challenging them to prove ownership of the private key. This method enhances security and facilitates password-less logins.
 
 #### 1. Locating the private key on local computer:
+
+As shown in the image above, the path to the private key for logging into `ieng6` is `/home` on the user's local computer.
 
 &nbsp;
 
 #### 2. Locating the public key on `ieng6`:
 
+As shown in the image above, the path to the public key for logging into `ieng6` is `/user/ ` on the remote computer `ieng6`.
+
 &nbsp;
 
 #### 3. Logging into `ieng6` without password:
+
+As shown in the image above, the user can now access the remote computer `ieng6` both swiftly and securely.
 
 &nbsp;
 
