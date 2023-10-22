@@ -88,6 +88,24 @@ Resulting string of messages:
 
 ![image of server home page](Images/Screen Shot 3.png)
 
+The state of the server is stored in two variables: `num` (number of messages) and `allMessages` (accumulated messages).
+
+> In this example, `num` is currently `0`, and `allMessages` is an empty string since there are no messages stored in the server yet.
+
+By using `/add-message?s=Daisy`, the method `handleRequest` in the `Handler` Class is called. This method serves to manage the incoming URL requests, thus the relevant argument to this method is the `url`.
+
+> In this example, `url` is `/add-message?s=Daisy`
+
+After checking correctness of the path of the `url` using the getPath() method of 'URI' Class (improted), the `url` is then extracted only the query part using the getQuery() method of 'URI' Class (improted). 
+
+> In this example, query is `?s=Daisy`.
+
+The query is splited at the `=` character, resulting in a string array `parameters`. This allows for validation of the query parameter `s` and extraction of the message following the `=`.
+
+Since the request in this example, `add-message?s=Daisy`, comes with the valid path `/add-message` and the right query parameter `s`, the `num` is incremented, the message along with its list number sequence is concatenated to `allMessages`, and a success message is returned. 
+
+> In this example, the resulting `num` is now `1` and the resulting `allMessages` is now `\n 1. Daisy`
+
 &nbsp;
 
 #### Example 2: 
