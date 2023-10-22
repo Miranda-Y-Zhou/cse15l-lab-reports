@@ -47,11 +47,11 @@ class Handler implements URLHandler {
                     allMessages = allMessages + String.format("\n %d. %s", num, parameters[1]);
                     return String.format("The message '%s' is successfully added!", parameters[1]);
                 }
-            }
-            else {
-                return "ERROR: /add-message requires a valid query that begins with '?s=<string>'" + 
-                        "\n Example: /add-message?s=Hello" + 
-                        "\n The page would show: 1. Hello";
+                else {
+                return "ERROR: '/add-message' requires a valid query that begins with '?s=<string>'" + 
+                        "\n Example: '/add-message?s=Hello'" + 
+                        "\n The page would show: '1. Hello'";
+                }
             }
             return "404 Not Found!";
         }
@@ -72,13 +72,35 @@ class StringServer {
 }
 ```
 
+The server page should look like this in a web browser:
+
+![image of server home page](Images/Screen Shot 1.png)
+
 &nbsp;
 
 #### Example 1: 
 
+The user adds the string message: `Daisy`
+
+
+
+Resulting string of messages:
+
+
+
 &nbsp;
 
 #### Example 2: 
+
+The user adds the string message: `Roses are red` 
+
+
+
+It is noted that spaces in the query appears as `%20`.
+
+Resulting string of messages:
+
+
 
 &nbsp;
 
