@@ -164,17 +164,23 @@ SSH key authentication is a secure method for remote server access, utilizing a 
 
 #### 1. Locating the private key on local computer:
 
+![image of private key location](Images/Screen Shot private key on local.png)
+
 As shown in the image above, the path to the private key for logging into `ieng6` is `/home` on the user's local computer.
 
 &nbsp;
 
 #### 2. Locating the public key on `ieng6`:
 
+![image of public key location](Images/Screen Shot public key on ieng6.png)
+
 As shown in the image above, the path to the public key for logging into `ieng6` is `/user/ ` on the remote computer `ieng6`.
 
 &nbsp;
 
 #### 3. Logging into `ieng6` without password:
+
+![image of login using key](Images/Screen Shot login with key.png)
 
 As shown in the image above, the user can now access the remote computer `ieng6` both swiftly and securely.
 
