@@ -190,8 +190,7 @@ As shown in the image above, the user can now access the remote computer `ieng6`
 
 ### Learning Reflection
 
-During the labs in week 2 and 3, I learned about setting up and managing Java-based web servers, and the utility of SSH keys in authenticating users without needing passwords. The use of SSH keys for password-less authentication not only simplifies the login process but also enhances security by relying on cryptographic principles.
-
+During weeks 2 and 3 of our labs, I discovered the elegance of crafting simple Java-based web servers—a feat I hadn't realized could be achieved with just a handful of Java files. I was also introduced to remote computer access via `ssh`, and the invaluable role of SSH keys in facilitating password-free user authentication. Utilizing SSH keys not only streamlines the login process but also enhances security through cryptographic measures. 
 
 &nbsp;
 
