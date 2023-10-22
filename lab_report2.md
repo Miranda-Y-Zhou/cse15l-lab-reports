@@ -166,7 +166,7 @@ SSH key authentication is a secure method for remote server access, utilizing a 
 
 ![image of private key location](Images/Screen Shot private key on local.png)
 
-As shown in the image above, the path to the private key for logging into `ieng6` is `/home` on the user's local computer.
+As shown in the image above, the path to the private key for logging into `ieng6` is `/Users/zhoujijun/.ssh/id_rsa` on the user's local computer.
 
 &nbsp;
 
@@ -174,7 +174,7 @@ As shown in the image above, the path to the private key for logging into `ieng6
 
 ![image of public key location](Images/Screen Shot public key on ieng6.png)
 
-As shown in the image above, the path to the public key for logging into `ieng6` is `/user/ ` on the remote computer `ieng6`.
+As shown in the image above, the path to the public key for logging into `ieng6` is `/home/linux/ieng6/cs15lfa23/cs15lfa23do/.ssh/authorized_keys` on the remote computer `ieng6`.
 
 &nbsp;
 
@@ -190,6 +190,7 @@ As shown in the image above, the user can now access the remote computer `ieng6`
 
 ### Learning Reflection
 
+During the labs in week 2 and 3, I learned about setting up and managing Java-based web servers, and the utility of SSH keys in authenticating users without needing passwords. The use of SSH keys for password-less authentication not only simplifies the login process but also enhances security by relying on cryptographic principles.
 
 
 &nbsp;
