@@ -82,11 +82,11 @@ The server page should look like this in a web browser:
 
 The user adds the string message: `Daisy`
 
-
+![image of adding Daisy](Images/Screen Shot 2.png)
 
 Resulting string of messages:
 
-
+![image of server home page](Images/Screen Shot 3.png)
 
 &nbsp;
 
@@ -94,13 +94,13 @@ Resulting string of messages:
 
 The user adds the string message: `Roses are red` 
 
-
+![image of adding Roses are red](Images/Screen Shot 4.png)
 
 It is noted that spaces in the query appears as `%20`.
 
 Resulting string of messages:
 
-
+![image of server home page](Images/Screen Shot 5.png)
 
 &nbsp;
 
@@ -108,7 +108,7 @@ Resulting string of messages:
 
 When the user tries to add a string message, but without following the correct query syntax:
 
-
+![image of error](Images/Screen Shot 6.png)
 
 This is because the server `StringServer` has been programmed to expect a specific query structure for adding messages. If the incoming request doesn't adhere to this expected format, the server is designed to recognize the discrepancy and respond with an error message to inform the user of the incorrect input. This ensures that users adhere to the expected input pattern and that the server remains resilient against unintended or malicious inputs.
 
