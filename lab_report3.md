@@ -208,6 +208,29 @@ This command will locate "Jurassic Park" in the `journal.pbio.0030056.txt` file 
 
 #### 4. Count Matches `-c`
 
+With the command option `-c`, `grep` will count the number of lines that match the pattern in the file.
+This option of `grep` is useful for quickly assessing the frequency of a pattern, which can be crucial for summarizing data, gauging the relevancy of the file to the searched string, or measuring occurrences without needing the details of each match.
+
+**Example 1:**
+
+```
+Mirandas-MBP:docsearch zhoujijun$ pwd
+/Users/zhoujijun/Documents/GitHub/docsearch
+Mirandas-MBP:docsearch zhoujijun$ grep -c "cancer" ./technical/biomed//1471-2105-4-24.txt
+64
+```
+
+This counts how many lines contain the word "cancer" in the `1471-2105-4-24.txt` file within the `./technical/biomed/` directory and outputs the resulting number. There are 64 matches with the string "cancer". It shows the content of the `1471-2105-4-24.txt` file is very much related to cancer. 
+
+**Example 2:**
+
+```
+Mirandas-MBP:docsearch zhoujijun$ pwd
+/Users/zhoujijun/Documents/GitHub/docsearch
+Mirandas-MBP:docsearch zhoujijun$ grep -c "cancer" technical/biomed/ar792.txt
+0
+```
+This counts how many lines contain the word "cancer" in the `ar792.txt` file within the `./technical/biomed/` directory and outputs the resulting number. There are 0 matches with the string "cancer". It shows the content of the `ar792.txt` file is not related to cancer. 
 
 &nbsp;
 
