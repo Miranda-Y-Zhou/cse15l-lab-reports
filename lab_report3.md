@@ -178,7 +178,31 @@ The above command searches for the word "jurassic park" in the `journal.pbio.003
 
 #### 3. Line Number `-n`
 
+Using the command option `-n` with `grep` prints the line number before each line that matches the pattern. 
+This option for `grep` is useful for pinpointing the exact location of matches by providing line numbers, which is particularly handy for debugging code or analyzing specific entries in large files.
 
+**Example 1:**
+
+```
+Mirandas-MBP:docsearch zhoujijun$ pwd
+/Users/zhoujijun/Documents/GitHub/docsearch
+Mirandas-MBP:docsearch zhoujijun$ grep -n "phylogenies" ./technical/plos//journal.pbio.0030021.txt
+20:        produce two sexes, and current phylogenies (e.g., [1]) suggest that sexual dimorphism was
+144:        important factor in this area are new phylogenies of the genus [17,18], which consistently
+```
+
+This command will locate "phylogenies" in the `journal.pbio.0030021.txt` file within the `./technical/plos/` directory and display each matching line with its respective line number in the file. This file is a large file with 192 lines and 1703 words. It would be a tedious process to locate the exact location of the word without line number.
+
+**Example 2:**
+
+```
+Mirandas-MBP:docsearch zhoujijun$ pwd
+/Users/zhoujijun/Documents/GitHub/docsearch
+Mirandas-MBP:docsearch zhoujijun$ grep -n "Jurassic Park" ./technical/plos//journal.pbio.0030056.txt
+16:        Jurassic Park was still taking in millions of dollars at the box office,
+```
+
+This command will locate "Jurassic Park" in the `journal.pbio.0030056.txt` file within the `./technical/plos/` directory and display each matching line with its respective line number in the file. This file is a large file with 179 lines and 2185 words. It would be a tedious process to locate the exact location of the word without line number.
 
 &nbsp;
 
