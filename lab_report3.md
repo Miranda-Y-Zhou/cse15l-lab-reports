@@ -105,6 +105,21 @@ With these changes, the reversed method now accurately produces a new array with
 
 The `grep` command is a powerful tool for searching through text and files for lines that match a given string, then printing matching lines. Here are four interesting options for `grep` and two examples for each, applied to files and directories from `./technical`.
 
+#### 1. Case-Insensitive Search `-i`
+
+&nbsp;
+
+#### 2. Line Number `-n`
+
+&nbsp;
+
+#### 3. Recursive Search `-r`
+
+&nbsp;
+
+#### 4. Count Matches `-c`
+
+
 &nbsp;
 
 ---
