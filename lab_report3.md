@@ -103,7 +103,7 @@ With these changes, the reversed method now accurately produces a new array with
 
 ### Terminal Command: `grep` 
 
-
+The `grep` command is a powerful tool for searching through text and files for lines that match a given string, then printing matching lines. Here are four interesting options for `grep` and two examples for each, applied to files and directories from `./technical`.
 
 &nbsp;
 
