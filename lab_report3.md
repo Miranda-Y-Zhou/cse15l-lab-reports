@@ -111,6 +111,7 @@ Here are four interesting options for `grep` and two examples for each, applied 
 #### 1. Recursive Search `-r`
 
 The `-r` option tells `grep` to read all files under each directory, recursively. It will search for a string in the current directory and all other subdirectories.
+This command option is useful because it allows the user to perform a string search across numerous files and nested directories simultaneously, saving time and effort when dealing with large collections of files.
 
 **Example 1:**
 
@@ -127,8 +128,20 @@ Mirandas-MBP:docsearch zhoujijun$ grep -r "grape" ./technical/
 ./technical//911report/chapter-12.txt:                about the size of a grapefruit or an orange, together with commercially available
 ```
 
-The above command `grep -r "grape" ./technical/` searches for the string "grape" in all files within the `./technical` directory and all of its subdirectories, including `plos`, `biomed`, `911report`, and `government`. Then, it prints the lines that contained the string "grape" and the file path of that file. 
-This command is useful because it allows the user to perform a string search across numerous files and nested directories simultaneously, saving time and effort when dealing with large collections of files.
+The above command `grep -r "grape" ./technical/` searches for the string "grape" in all files within the `./technical` directory and all of its subdirectories, including `plos`, `biomed`, `911report`, `government`, and all subdirectories of the subdirectories until there are no more directories. Then, it prints the lines that contained the string "grape" and the file path of that file. 
+
+**Example 2:**
+
+```
+Mirandas-MBP:docsearch zhoujijun$ pwd
+/Users/zhoujijun/Documents/GitHub/docsearch
+Mirandas-MBP:docsearch zhoujijun$ grep -r "biology" ./technical/government/
+./technical/government//Gen_Account_Office/pe1019.txt:as chemistry, biology, physics, and computer science."
+./technical/government//Gen_Account_Office/pe1019.txt:science to fisheries biology and chemical engineering. Of note is
+./technical/government//Media/Law_Award_from_College.txt:in both biology and psychology, she worked as legal secretary for
+```
+
+The above command `grep -r "biology" ./technical/government/` searches for the string "biology" in all files within the `./technical/government/` directory and all of its subdirectories, including `About_LSC`, `Alcohol_Problems`, `Env_Prot_Agen`, `Gen_Account_Office`, `Media`, `Post_Rate_Comm` and all subdirectories of the subdirectories until there are no more directories. Then, it prints the lines that contained the string "biology" and the file path of that file. 
 
 &nbsp;
 
