@@ -24,6 +24,39 @@ This lab also explore the functionalities of the terminal command `grep` by prov
 
 ### Bugs from Week 4's Lab
 
+The original `reversed` method from `ArrayExamples` class is shown below. 
+```
+static int[] reversed(int[] arr) {
+    int[] newArray = new int[arr.length];
+    for(int i = 0; i < arr.length; i += 1) {
+      arr[i] = newArray[arr.length - i - 1];
+    }
+    return arr;
+  }
+```
+This method is designed to take in an integer array and return a **new** array with all the elements of the input array in reversed order.
+
+Initially, attention is given to a test case that is expected to fail, revealing the flaw in the `reversed` method. The JUnit test below has been designed to reverse a non-empty array and, as such, should demonstrate the defect in the method's implementation.
+
+```
+@Test
+  public void testReversed2() {
+    int[] input1 = { 1, 5, 6, 3, 9 };
+    assertArrayEquals(new int[]{ 9, 3, 6, 5, 1 }, ArrayExamples.reversed(input1));
+  }
+```
+
+Failure-inducing input: `{ 1, 5, 6, 3, 9 }`
+
+There's a situation where the method in question works just fine. If the user hand it an empty array, it outputs back an empty array, which is exactly expected output. The following test case confirms this observation.
+
+```
+@Test
+  public void testReversed() {
+    int[] input1 = { };
+    assertArrayEquals(new int[]{ }, ArrayExamples.reversed(input1));
+  }
+```
 
 
 &nbsp;
