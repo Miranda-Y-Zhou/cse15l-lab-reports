@@ -178,6 +178,8 @@ The above command searches for the word "jurassic park" in the `journal.pbio.003
 
 #### 3. Line Number `-n`
 
+
+
 &nbsp;
 
 #### 4. Count Matches `-c`
@@ -188,5 +190,7 @@ The above command searches for the word "jurassic park" in the `journal.pbio.003
 ---
 
 ### References
+
+Infromation regarding the command `grep` and its options were obtained primarily from [lecture notes](https://drive.google.com/file/d/1ZQVZOHjYadAu45eoguu0RSMw7WZrvKx0/view?usp=share_link) and the website [Grep Command in Linux/UNIX](https://www.digitalocean.com/community/tutorials/grep-command-in-linux-unix).
 
 &nbsp;
