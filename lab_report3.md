@@ -57,6 +57,9 @@ There's a situation where the method in question works just fine. If the user ha
 
 Input that doesn’t induce a failure: `{}`
 
+Upon execution of the JUnit tests, it is observed that the `testReversed2` fails, its symptom shown in the image below. The `testReversed` test, however, succeeds, which suggests that the method is capable of handling empty arrays without introducing errors.
+
+![image of symptom](Images/Screen Shot symptom.png)
 
 
 &nbsp;
