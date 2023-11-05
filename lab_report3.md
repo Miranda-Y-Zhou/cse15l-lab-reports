@@ -91,11 +91,11 @@ static int[] reversed(int[] arr) {
 
 **Explaining the Fix**
 
-The corrected code resolves the problem by correctly assigning the elements from the end of the input integer array to the beginning of the new array newArray. The loop now iterates through each index and assigns the corresponding reversed value properly to the new integer array. This fix ensures that the reversed method behaves as intended, returning a new array with elements in reverse order, without modifying the original array.
+The original code failed because it attempts to assign elements of the new integer array into the input array, which is the opposite assignment of what it is intended. Since the new array is created to be an empty array of the same length as the original, it is just an array with filled with `0`. Thus, this original method simply assigns `0` to all elements of the input array. The corrected code resolves the problem by correctly assigning the elements from the end of the input integer array to the beginning of the new array newArray. The loop now iterates through each index and assigns the corresponding reversed value properly to the new integer array. This fix ensures that the reversed method behaves as intended, returning a new array with elements in reverse order, without modifying the original array.
 
 With these changes, the reversed method now accurately produces a new array with the input array's elements reversed, and the passing of all JUnit test cases confirm this expected behavior.
 
-
+![image of bug fixed](Images/Screen Shot corrected bug.png)
 
 &nbsp;
 
