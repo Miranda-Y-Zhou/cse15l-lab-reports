@@ -61,6 +61,41 @@ Upon execution of the JUnit tests, it is observed that the `testReversed2` fails
 
 ![image of symptom](Images/Screen Shot symptom.png)
 
+**The Bug in Code**
+
+Here's the original method that contains the bug. It attempts to assign the new integer array list's elements into the old one, which is not the intended behavior. 
+
+```
+static int[] reversed(int[] arr) {
+    int[] newArray = new int[arr.length];
+    for(int i = 0; i < arr.length; i += 1) {
+      arr[i] = newArray[arr.length - i - 1];
+    }
+    return arr;
+  }
+```
+
+**The Corrected Method**
+
+After identifying the issue, the method was corrected to ensure that a new array is assigned with the reversed elements of the original array, which remains unchanged:
+
+```
+static int[] reversed(int[] arr) {
+    int[] newArray = new int[arr.length];
+    for(int i = 0; i < arr.length; i += 1) {
+      newArray[arr.length - i - 1] = arr[i]; 
+    }
+    return newArray;
+  }
+```
+
+**Explaining the Fix**
+
+The corrected code resolves the problem by correctly assigning the elements from the end of the input integer array to the beginning of the new array newArray. The loop now iterates through each index and assigns the corresponding reversed value properly to the new integer array. This fix ensures that the reversed method behaves as intended, returning a new array with elements in reverse order, without modifying the original array.
+
+With these changes, the reversed method now accurately produces a new array with the input array's elements reversed, and the passing of all JUnit test cases confirm this expected behavior.
+
+
 
 &nbsp;
 
