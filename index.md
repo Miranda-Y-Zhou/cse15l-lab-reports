@@ -17,3 +17,6 @@ Week 1: [Markdown](https://miranda-y-zhou.github.io/cse15l-lab-reports/Markdown.
 [Lab Report 1](https://miranda-y-zhou.github.io/cse15l-lab-reports/lab_report1.html)
 
 [Lab Report 2](https://miranda-y-zhou.github.io/cse15l-lab-reports/lab_report2.html)
+
+[Lab Report 3](https://miranda-y-zhou.github.io/cse15l-lab-reports/lab_report3.html)
+
