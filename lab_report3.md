@@ -16,13 +16,15 @@ The objective of this lab is to further analyze and document a bug from week 4's
 This lab also explore the functionalities of the terminal command `grep` by providing examples of its command-line options.
 
 
-* [Bugs from Week 4's Lab](https://miranda-y-zhou.github.io/cse15l-lab-reports/lab_report2.html#string-server)
-* [Terminal Command: `grep`](https://miranda-y-zhou.github.io/cse15l-lab-reports/lab_report2.html#ssh-key)
-* [References](https://miranda-y-zhou.github.io/cse15l-lab-reports/lab_report2.html#learning-reflection)
+* [Bugs from Week 4's Lab](https://miranda-y-zhou.github.io/cse15l-lab-reports/lab_report3.html#bugs-from-week-4s-lab)
+* [Terminal Command: `grep`](https://miranda-y-zhou.github.io/cse15l-lab-reports/lab_report3.html#terminal-command-grep)
+* [References](https://miranda-y-zhou.github.io/cse15l-lab-reports/lab_report3.html#references)
 
 ---
 
 ### Bugs from Week 4's Lab
+
+
 
 &nbsp;
 
