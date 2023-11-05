@@ -110,7 +110,7 @@ Here are four interesting options for `grep` and two examples for each, applied 
 
 #### 1. Recursive Search `-r`
 
-The `-r` option tells `grep` to read all files under each directory, recursively. It will search for a string in the current directory and all other subdirectories.
+The `-r` option tells `grep` to read all files under each directory, recursively. It will search for a string in the current directory and all other subdirectories. Then, the matching lines along with their file paths are printed to the terminal.
 This command option is useful because it allows the user to perform a string search across numerous files and nested directories simultaneously, saving time and effort when dealing with large collections of files.
 
 **Example 1:**
@@ -146,6 +146,33 @@ The above command `grep -r "biology" ./technical/government/` searches for the s
 &nbsp;
 
 #### 2. Case-Insensitive Search `-i`
+
+The `-i` option allows `grep` to perform case-insensitive searches, so it doesn't differentiate between uppercase and lowercase letters.
+This option for grep is useful because it lets the user find matches regardless of letter case, making it easier to search for text when the user is unsure of the exact capitalization or want to include all variations.
+
+**Example 1:**
+
+```
+Mirandas-MBP:docsearch zhoujijun$ pwd
+/Users/zhoujijun/Documents/GitHub/docsearch
+Mirandas-MBP:docsearch zhoujijun$ grep "PHYLOGENIES" ./technical/plos//journal.pbio.0030021.txt
+Mirandas-MBP:docsearch zhoujijun$ grep -i "PHYLOGENIES" ./technical/plos//journal.pbio.0030021.txt
+        produce two sexes, and current phylogenies (e.g., [1]) suggest that sexual dimorphism was
+        important factor in this area are new phylogenies of the genus [17,18], which consistently
+```
+The above command searches for the word "phylogenies" in the `journal.pbio.0030021.txt` file within the `./technical/plos/` directory, ignoring case differences. As illustrated in the example, when the user tries to search "PHYLOGENIES" using only `grep` with no other command options, there are no output as there are no string matched "PHYLOGENIES" in the file. However, when the command option `-i` is included, it searches for "phylogenies", "PHYLOGENIES", "PHyLOGeNIes", or any combination of letter cases, which in the file above there are two matching "phylogenies".
+
+**Example 2:**
+
+```
+Mirandas-MBP:docsearch zhoujijun$ pwd
+/Users/zhoujijun/Documents/GitHub/docsearch
+Mirandas-MBP:docsearch zhoujijun$ grep "JuRASsiC pArk" ./technical/plos//journal.pbio.0030056.txt
+Mirandas-MBP:docsearch zhoujijun$ grep -i "JuRASsiC pArk" ./technical/plos//journal.pbio.0030056.txt
+        Jurassic Park was still taking in millions of dollars at the box office,
+```
+
+The above command searches for the word "jurassic park" in the `journal.pbio.0030056.txt` file within the `./technical/plos/` directory, ignoring case differences. As illustrated in the example, when the user tries to search "JuRASsiC pArk" using only `grep` with no other command options, there are no output as there are no string matched "JuRASsiC pArk" in the file. However, when the command option `-i` is included, it searches for "jurassic park", "JURASSIC PARK", "JuRASsiC pArk", or any combination of letter cases, which in the file above there is one matching "Jurassic Park".
 
 &nbsp;
 
