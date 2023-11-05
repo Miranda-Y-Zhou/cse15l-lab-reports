@@ -9,9 +9,6 @@ Back to [index](https://miranda-y-zhou.github.io/cse15l-lab-reports/)
 
 ## Bugs and Commands (Week 5)
 
-The objective of this lab is to create a Java web server, `StringServer`, to accumulate and display messages.
-This lab also delve into SSH key authentication, showcasing a password-less login to `ieng6`, followed by reflections on the learnings from weeks 2 and 3.
-
 The objective of this lab is to further analyze and document a bug from week 4's lab, illustrating it with JUnit test cases.
 This lab also explore the functionalities of the terminal command `grep` by providing examples of its command-line options.
 
@@ -53,10 +50,13 @@ There's a situation where the method in question works just fine. If the user ha
 ```
 @Test
   public void testReversed() {
-    int[] input1 = { };
-    assertArrayEquals(new int[]{ }, ArrayExamples.reversed(input1));
+    int[] input1 = {};
+    assertArrayEquals(new int[]{}, ArrayExamples.reversed(input1));
   }
 ```
+
+Input that doesn’t induce a failure: `{}`
+
 
 
 &nbsp;
