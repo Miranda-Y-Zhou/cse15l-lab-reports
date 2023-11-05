@@ -103,17 +103,40 @@ With these changes, the reversed method now accurately produces a new array with
 
 ### Terminal Command: `grep` 
 
-The `grep` command is a powerful tool for searching through text and files for lines that match a given string, then printing matching lines. Here are four interesting options for `grep` and two examples for each, applied to files and directories from `./technical`.
+The `grep` command, short for “global regular expression print”, is a powerful command for searching through text and files for lines that match a given string, then printing matching lines. 
+This command follows the general syntax: `grep "string" 《file name》`.
 
-#### 1. Case-Insensitive Search `-i`
+Here are four interesting options for `grep` and two examples for each, applied to files and directories from `./technical`.
+
+#### 1. Recursive Search `-r`
+
+The `-r` option tells `grep` to read all files under each directory, recursively. It will search for a string in the current directory and all other subdirectories.
+
+**Example 1:**
+
+```
+Mirandas-MBP:docsearch zhoujijun$ pwd
+/Users/zhoujijun/Documents/GitHub/docsearch
+Mirandas-MBP:docsearch zhoujijun$ grep -r "grape" ./technical/
+./technical//plos/journal.pbio.0020224.txt:        Dactylosphera vitifoliae devastated European grapewine varieties
+./technical//plos/journal.pbio.0020214.txt:        2004). The grapevine distributes stories of “bad words” that should be avoided when
+./technical//biomed/1471-2229-3-3.txt:        grapevine and tomato [ 34 ] . The locus PM50 contains only
+./technical//biomed/1472-6750-2-2.txt:        Biological control by F2/5 is grape-specific, as F2/5 is
+./technical//biomed/1472-6750-2-2.txt:        not effective on non-grapevine host plants such as 
+./technical//biomed/1472-6750-2-2.txt:        grape would be beneficial for disease control in field
+./technical//911report/chapter-12.txt:                about the size of a grapefruit or an orange, together with commercially available
+```
+
+The above command `grep -r "grape" ./technical/` searches for the string "grape" in all files within the `./technical` directory and all of its subdirectories, including `plos`, `biomed`, `911report`, and `government`. Then, it prints the lines that contained the string "grape" and the file path of that file. 
+This command is useful because it allows the user to perform a string search across numerous files and nested directories simultaneously, saving time and effort when dealing with large collections of files.
 
 &nbsp;
 
-#### 2. Line Number `-n`
+#### 2. Case-Insensitive Search `-i`
 
 &nbsp;
 
-#### 3. Recursive Search `-r`
+#### 3. Line Number `-n`
 
 &nbsp;
 
