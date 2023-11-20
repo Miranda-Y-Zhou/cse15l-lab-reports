@@ -78,7 +78,7 @@ It is identified previously that in order to fix the bug, `index1` need to be ch
 
 ### Step 4: Log into ieng6
 
-![image of logging into ieng6 from local computer]()
+![image of logging into ieng6 from local computer](Images/lab_report4_image1.png)
 
 Keys Pressed:
 
@@ -87,7 +87,7 @@ Keys Pressed:
 * no password required because ssh key was set up in local computer
 
 `<enter>`
-* to run the command
+* to execute the `ssh` command
 
 &nbsp;
 
