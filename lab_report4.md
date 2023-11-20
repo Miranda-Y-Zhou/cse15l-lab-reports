@@ -126,10 +126,14 @@ Key Pressed:
 
 ![image of inside vim](Images/lab_report4_image5.png)
 
+Keys Pressed:
+
 `vim` + `ListExamples.java` + `<enter>`
 * to open `ListExamples.java` in Vim text editor in terminal, as shown in image above
 
 ![image of going to 1](Images/lab_report4_image6.png)
+
+Keys Pressed:
 
 `<esc>` + `:44` + `e`
 * `<esc>` to make sure in `Normal mode`
@@ -137,6 +141,8 @@ Key Pressed:
 * `e` to jump to the end of word, which is the character `1` that we want to replace with `2`
 
 ![image of replacing 1 with 2](Images/lab_report4_image7.png)
+
+Keys Pressed:
 
 `r2` + `<esc>` + `:wq` + `<enter>`
 * `r2` to replace `1` with `2`
@@ -153,6 +159,8 @@ Key Pressed:
 
 ![image of running tests](Images/lab_report4_image8.png)
 
+Keys Pressed:
+
 `bash` + `<space>` + `test.sh` + `<enter>`
 * to run the shell script `test.sh` which include the terminal commands that compile all java files and run `ListExamplesTests.class`:
   * `javac -cp .:lib/hamcrest-core-1.3.jar:lib/junit-4.13.2.jar *.java`
@@ -165,6 +173,8 @@ Key Pressed:
 ### Step 9: Commit and push the resulting change to your Github account
 
 ![image of commiting and pushing to github](Images/lab_report4_image9.png)
+
+Keys Pressed:
 
 `git` + `<space>` + `add` + `<space>` + `ListExamples.java` + `<enter>`
 
