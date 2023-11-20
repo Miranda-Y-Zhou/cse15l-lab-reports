@@ -82,12 +82,9 @@ It is identified previously that in order to fix the bug, `index1` need to be ch
 
 Keys Pressed:
 
-`ssh cs15lfa23do@ieng6-201.ucsd.edu`
-* to log into ieng6 using the user name `cs15lfa23do`
+`ssh` + `<space>` + `cs15lfa23do@ieng6-201.ucsd.edu` + `<enter>`
+* to log into remote computer `ieng6-201` using the command `ssh` and the user name `cs15lfa23do`
 * no password required because ssh key was set up in local computer
-
-`<enter>`
-* to execute the `ssh` command
 
 &nbsp;
 
@@ -95,7 +92,12 @@ Keys Pressed:
 
 ### Step 5: Clone your fork of the repository from your Github account (using the SSH URL)
 
+![image of cloning from github](Images/lab_report4_image2.png)
 
+Key Pressed:
+
+`git clone` + `<space>` + `<control>` + `p` + `<enter>`
+* to clone the repository of the following ssh url (`git@github.com:Miranda-Y-Zhou/lab7.git`) copied from github.
 
 &nbsp;
 
@@ -103,6 +105,17 @@ Keys Pressed:
 
 ### Step 6: Run the tests, demonstrating that they fail
 
+![image of running test](Images/lab_report4_image3.png)
+
+Key Pressed:
+
+`cd` + `<space>` + `lab7/` + `<enter>`
+* to change the working directory to the directory just cloned
+
+`bash` + `<space>` + `test.sh` + `<enter>`
+* to run the shell script `test.sh` which include the terminal commands that compile all java files and run `ListExamplesTests.class`:
+  * `javac -cp .:lib/hamcrest-core-1.3.jar:lib/junit-4.13.2.jar *.java`
+  * `java -cp .:lib/hamcrest-core-1.3.jar:lib/junit-4.13.2.jar org.junit.runner.JUnitCore ListExamplesTests`
 
 
 &nbsp;
