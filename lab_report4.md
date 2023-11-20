@@ -70,13 +70,24 @@ class ListExamples {
 }
 ```
 
+It is identified previously that in order to fix the bug, `index1` need to be changed to `index2` in `ListExamples.java`.
+
 &nbsp;
 
 ---
 
 ### Step 4: Log into ieng6
 
+![image of logging into ieng6 from local computer]()
 
+Keys Pressed:
+
+`ssh cs15lfa23do@ieng6-201.ucsd.edu`
+* to log into ieng6 using the user name `cs15lfa23do`
+* no password required because ssh key was set up in local computer
+
+`<enter>`
+* to run the command
 
 &nbsp;
 
