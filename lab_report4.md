@@ -124,7 +124,26 @@ Key Pressed:
 
 ### Step 7: Edit the code file to fix the failing test
 
+![image of inside vim](Images/lab_report4_image5.png)
 
+`vim` + `ListExamples.java` + `<enter>`
+* to open `ListExamples.java` in Vim text editor in terminal, as shown in image above
+
+![image of going to 1](Images/lab_report4_image6.png)
+
+`<esc>` + `:44` + `e`
+* `<esc>` to make sure in `Normal mode`
+* `:44` to jump to line 44, where the error is identified
+* `e` to jump to the end of word, which is the character `1` that we want to replace with `2`
+
+![image of replacing 1 with 2](Images/lab_report4_image7.png)
+
+`r2` + `<esc>` + `:wq` + `<enter>`
+* `r2` to replace `1` with `2`
+  * pressing the `r` will delete the character `1` under crusor and enter `Insert mode`
+  * pressing the `2` will insert `2` at the place of crusor
+* `<esc>` to switch back to `Normal mode`
+* `:wq` to save file and quit Vim text editor
 
 &nbsp;
 
@@ -132,7 +151,12 @@ Key Pressed:
 
 ### Step 8: Run the tests, demonstrating that they now succeed
 
+![image of running tests](Images/lab_report4_image8.png)
 
+`bash` + `<space>` + `test.sh` + `<enter>`
+* to run the shell script `test.sh` which include the terminal commands that compile all java files and run `ListExamplesTests.class`:
+  * `javac -cp .:lib/hamcrest-core-1.3.jar:lib/junit-4.13.2.jar *.java`
+  * `java -cp .:lib/hamcrest-core-1.3.jar:lib/junit-4.13.2.jar org.junit.runner.JUnitCore ListExamplesTests`
 
 &nbsp;
 
@@ -140,7 +164,20 @@ Key Pressed:
 
 ### Step 9: Commit and push the resulting change to your Github account
 
+![image of commiting and pushing to github](Images/lab_report4_image9.png)
 
+`git` + `<space>` + `add` + `<space>` + `ListExamples.java` + `<enter>`
+
+* to "stage" `ListExamples.java` to be part of the next commit
+
+`git` + `<space>` + `commit` + `<space>` + `-m` + `<space>` + `"Updated ListExamples.java"` + `<enter>`
+
+* `git commit` to commite the file added locally
+* `-m` option allows the user to add a commit message, `"Updated ListExamples.java"`, directly from the command line
+
+`git push` + `<enter>`
+
+* to copy all new commits to remote (github)
 
 &nbsp;
 
