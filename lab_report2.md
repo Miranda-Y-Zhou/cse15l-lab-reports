@@ -14,7 +14,7 @@ This lab also delve into SSH key authentication, showcasing a password-less logi
 
 
 * [Web Server: `StringServer`](https://miranda-y-zhou.github.io/cse15l-lab-reports/lab_report2.html#string-server)
-* [SSH Key](https://miranda-y-zhou.github.io/cse15l-lab-reports/lab_report2.html#ssh-key)
+* [SSH Key](https://miranda-y-zhou.github.io/cse15l-lab-reports/lab_report2.html#ssh-key-authentication)
 * [Learning Reflection](https://miranda-y-zhou.github.io/cse15l-lab-reports/lab_report2.html#learning-reflection)
 
 ---
