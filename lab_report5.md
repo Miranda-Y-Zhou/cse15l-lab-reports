@@ -13,3 +13,19 @@ The objective of this lab is to simulate a debugging process for a Java program 
 
 * [Debugging Scenario](https://miranda-y-zhou.github.io/cse15l-lab-reports/lab_report5.html#string-server)
 * [Learning Reflection](https://miranda-y-zhou.github.io/cse15l-lab-reports/lab_report5.html#learning-reflection)
+
+---
+
+### Debugging Scenario
+
+
+
+&nbsp;
+
+---
+
+### Learning Reflection
+
+
+
+&nbsp;
