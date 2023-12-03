@@ -11,12 +11,14 @@ Back to [index](https://miranda-y-zhou.github.io/cse15l-lab-reports/)
 
 The objective of this lab is to simulate a debugging process for a Java program and bash script, followed by reflections on the learnings from the second half of this quarter.
 
-* [Debugging Scenario](https://miranda-y-zhou.github.io/cse15l-lab-reports/lab_report5.html#string-server)
+* [Debugging Scenario](https://miranda-y-zhou.github.io/cse15l-lab-reports/lab_report5.html#debugging-scenario)
 * [Learning Reflection](https://miranda-y-zhou.github.io/cse15l-lab-reports/lab_report5.html#learning-reflection)
 
 ---
 
 ### Debugging Scenario
+
+The original bugged code
 
 
 
