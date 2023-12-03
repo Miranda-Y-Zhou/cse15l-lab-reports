@@ -18,7 +18,7 @@ The objective of this lab is to simulate a debugging process for a Java program 
 
 ### Debugging Scenario
 
-## Original File
+#### Original File
 
 **File and Directory Structure**
 
@@ -28,11 +28,11 @@ The objective of this lab is to simulate a debugging process for a Java program 
 
 **Output**
 
-## Student's EdStem Post
+#### Student's EdStem Post
 
-## TA's EdStem Posts
+#### TA's EdStem Posts
 
-## Trying Out TA's Suggestions
+#### Trying Out TA's Suggestions
 
 
 
