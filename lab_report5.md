@@ -18,7 +18,21 @@ The objective of this lab is to simulate a debugging process for a Java program 
 
 ### Debugging Scenario
 
-The original bugged code
+## Original File
+
+**File and Directory Structure**
+
+**Java File**
+
+**Bash Script**
+
+**Output**
+
+## Student's EdStem Post
+
+## TA's EdStem Posts
+
+## Trying Out TA's Suggestions
 
 
 
