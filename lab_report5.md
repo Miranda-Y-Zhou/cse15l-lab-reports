@@ -41,7 +41,7 @@ The main components are as follows:
 
 `grade.sh`: This bash script is used for automating the grading process. It performs various tasks such as cloning the student's submission from a repository, verifying the presence of the required Java files, compiling the Java files, running JUnit tests, and calculating the score based on test outcomes.
 
-It is noted that two more directories, `student-submission` and `grading-area` will be created under `list-examples-grader` by the `grade.sh` once it is ran. 
+It is noted that two more directories, `student-submission` and `grading-area` will be created under `list-examples-grader` by the `grade.sh` once it is ran.
 
 **Java File**
 
@@ -211,7 +211,7 @@ After running `grade.sh` using [this student submission repository](https://gith
 
 &nbsp;
 
-#### TA's EdStem Posts
+#### TA's EdStem Response
 
 > Hi, thanks for reaching out with your issue. From what you've described, it seems like the script is not correctly capturing the number of tests run, resulting in the division by zero error. This can happen if the expected output format from JUnit does not match what the script is parsing. A good starting point would be to inspect the contents of the `junit_output.txt` file. This file should contain the details of the JUnit test execution, including the number of tests run and the number of failures. Perhaps you could try to add echo statements in your script to check your variables, and to run the command `cat grading-area/junit_output.txt`. This command will display the contents of the `junit_output.txt` file, which will help you understand if the script is correctly parsing the number of tests run (`tests_run`) and the number of failures (`failures`).
 
@@ -316,5 +316,6 @@ The terminal output from running `bash grade.sh https://github.com/ucsd-cse15l-f
 
 ### Learning Reflection
 
+One of the most interesting things I learned in the second half of this quarter was how to use `vim` for editing files on remote systems, like the `ieng6` remote computer, where graphical interfaces aren't available and I'm limited to a terminal. Initially, I found `vim` somewhat challenging and a bit cumbersome to use, but with some practice, my comfort level has grown. Although it's still not my favorite editor, I've come to appreciate its utility in remote environments. Another cool aspect I discovered was setting up SSH keys for GitHub on `ieng6`. This allowed me to `commit` and `push` changes to repositories directly from the remote computer, bypassing the need for GitHub Desktop, which isn't feasible to use via terminal. These skills have broadened my understanding of working efficiently in remote and terminal-based environments.
 
 &nbsp;
