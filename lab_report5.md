@@ -199,6 +199,10 @@ cd ..
 
 **Output**
 
+The output of running `grade.sh` using [this student submission repository](https://github.com/ucsd-cse15l-f22/list-methods-corrected) to test the bash script is shown below:
+
+![output1]()
+
 #### Student's EdStem Post
 
 #### TA's EdStem Posts
