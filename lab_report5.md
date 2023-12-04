@@ -24,14 +24,14 @@ The objective of this lab is to simulate a debugging process for a Java program 
 
 The directory structure is designed to facilitate the testing and grading of student submitted Java program. 
 
-> list-examples-grader
-  > lib
-    > hamcrest-core-1.3.jar
-  > junit-4.13.2.jar
-  > grade.sh
-  > GradeServer.java
-  > Server.java
-  > TestListExamples.java
+* list-examples-grader
+  * lib
+    * hamcrest-core-1.3.jar
+    * junit-4.13.2.jar
+  * grade.sh
+  * GradeServer.java
+  * Server.java
+  * TestListExamples.java
 
 
 The main components are as follows:
@@ -44,7 +44,7 @@ The main components are as follows:
 
 **Java File**
 
-ListExamples.java
+`ListExamples.java` has the contents below:
 
 ```
 import java.util.ArrayList;
@@ -99,7 +99,7 @@ class ListExamples {
 
 ```
 
-TestListExample.java
+`TestListExample.java` has the contents below:
 
 ```
 import static org.junit.Assert.*;
@@ -128,7 +128,7 @@ public class TestListExamples {
 
 **Bash Script**
 
-grade.sh
+`grade.sh` has the contents below:
 
 ```
 CPATH='.:../lib/hamcrest-core-1.3.jar:../lib/junit-4.13.2.jar'
@@ -159,23 +159,17 @@ fi
 echo "Student code has the correct file submitted."
 
 # Copy relevent files for grading into grading-area
-
 cp "student-submission/ListExamples.java" "grading-area"
-
 cp "TestListExamples.java" "grading-area"
-
 cp "GradeServer.java" "grading-area"
-
 cp "Server.java" "grading-area"
 
 echo "All java files are copied into the grading-area directory"
 
 # Change working directory into grading area
-
 cd grading-area
 
 # Complie all the java files
-
 javac -cp $CPATH *.java &> "javac_output.txt"
 
 # Check the exit status of the last command (javac)
@@ -188,21 +182,16 @@ else
 fi
 
 # Run JUnit Tests
-
 java -cp $CPATH org.junit.runner.JUnitCore TestListExamples &> "junit_output.txt"
 
 tests_run=$(grep -o 'run: [0-9]*' junit_output.txt | grep -o '[0-9]*')
-
 failures=$(grep -o 'Failures: [0-9]*' junit_output.txt | grep -o '[0-9]*')
-
 correct=$((tests_run-failures))
 
 # Calculate grade
-
 echo "Score:" $((correct/tests_run))"%"
 
 # Back to original directory
-
 cd ..
 
 ```
