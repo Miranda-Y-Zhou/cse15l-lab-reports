@@ -35,13 +35,13 @@ The directory and file structure is designed to facilitate the testing and gradi
 
 The main components are as follows:
 
-`ListExamples.java`: This is the primary Java file containing the program logic. It defines a class ListExamples with methods filter and merge. The filter method filters a list of strings based on a given condition, and the merge method merges two sorted lists into a single sorted list.
+`ListExamples.java`: This is the student submitted Java file. It defines a class ListExamples with methods filter and merge. The filter method filters a list of strings based on a given condition, and the merge method merges two sorted lists into a single sorted list.
 
-`TestListExample.java`: This file contains JUnit tests for the ListExamples class. It includes a custom implementation of the StringChecker interface, IsMoon, and a test method testMergeRightEnd to verify the correctness of the merge method in ListExamples.
+`TestListExample.java`: This file contains JUnit tests for the `ListExamples` class to verify the correctness of the merge method in ListExamples.
 
 `grade.sh`: This bash script is used for automating the grading process. It performs various tasks such as cloning the student's submission from a repository, verifying the presence of the required Java files, compiling the Java files, running JUnit tests, and calculating the score based on test outcomes.
 
-It is noted that two more directories, `student-submission` and `grading-area` would be created under `list-examples-grader` by the `grade.sh` once it is ran. 
+It is noted that two more directories, `student-submission` and `grading-area` will be created under `list-examples-grader` by the `grade.sh` once it is ran. 
 
 **Java File**
 
