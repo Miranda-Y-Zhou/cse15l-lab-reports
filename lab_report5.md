@@ -308,14 +308,13 @@ cd ..
 
 The terminal output from running `bash grade.sh https://github.com/ucsd-cse15l-f22/list-methods-corrected` is now as desired:
 
-
+![output after fixed](Images/Screen Shot lab 5-3.png)
 
 &nbsp;
 
 ---
 
 ### Learning Reflection
-
 
 
 &nbsp;
