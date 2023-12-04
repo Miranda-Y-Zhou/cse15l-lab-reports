@@ -197,21 +197,19 @@ cd ..
 
 ```
 
-**Output**
-
-The output of running `grade.sh` using [this student submission repository](https://github.com/ucsd-cse15l-f22/list-methods-corrected) to test the bash script is shown below:
-
-![output1](Images/Screen Shot lab 5-1.png)
-
-The input: `bash grade.sh https://github.com/ucsd-cse15l-f22/list-methods-corrected`
-
-The expected output after `Compilation successful.`: `Score: 100%`
-
-The actual output after `Compilation successful.`: `grade.sh: line 72: correct/tests_run: division by 0 (error token is "tests_run")`
+&nbsp;
 
 #### Student's EdStem Post
 
+After running `grade.sh` using [this student submission repository](https://github.com/ucsd-cse15l-f22/list-methods-corrected) to test the bash script, the student got a different output than expected. The student makes a post on EdStem about this symptom.
 
+> Hello, I've encountered a bug while running the grade.sh script and I'm not sure what's causing it. I used the following command to test the script: `bash grade.sh https://github.com/ucsd-cse15l-f22/list-methods-corrected`. This command should execute the script using [this student submission repository](https://github.com/ucsd-cse15l-f22/list-methods-corrected) provided. After the script shows `Compilation successful.`, it's expected to output the score as `Score: 100%`. However, I'm getting an error at this stage: `grade.sh: line 72: correct/tests_run: division by 0 (error token is "tests_run")` This error suggests that the variable tests_run is zero at the point of calculating the score, leading to a division by zero. This is confusing because, regardless of whether the JUnit tests pass or fail, there should be at least one test run, as indicated by the script's logic. So, I'm puzzled as to why the tests_run variable would be zero. I've attached the terminal out put and github repository containing my code.
+
+[https://github.com/Miranda-Y-Zhou/list-examples-grader.git](https://github.com/Miranda-Y-Zhou/list-examples-grader.git)
+
+![output1](Images/Screen Shot lab 5-1.png)
+
+&nbsp;
 
 #### TA's EdStem Posts
 
