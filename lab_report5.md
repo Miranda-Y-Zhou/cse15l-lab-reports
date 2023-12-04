@@ -213,6 +213,10 @@ After running `grade.sh` using [this student submission repository](https://gith
 
 #### TA's EdStem Posts
 
+> Hi, thanks for reaching out with your issue. From what you've described, it seems like the script is not correctly capturing the number of tests run, resulting in the division by zero error. This can happen if the expected output format from JUnit does not match what the script is parsing. A good starting point would be to inspect the contents of the `junit_output.txt` file. This file should contain the details of the JUnit test execution, including the number of tests run and the number of failures. Perhaps you could try to add echo statements in your script to check your variables, and to run the command `cat grading-area/junit_output.txt`. This command will display the contents of the `junit_output.txt` file, which will help you understand if the script is correctly parsing the number of tests run (`tests_run`) and the number of failures (`failures`).
+
+&nbsp;
+
 #### Trying Out TA's Suggestions
 
 
