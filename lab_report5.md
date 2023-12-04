@@ -22,17 +22,16 @@ The objective of this lab is to simulate a debugging process for a Java program 
 
 **Directory and File Structure**
 
-The directory structure is designed to facilitate the testing and grading of student submitted Java program. 
+The directory and file structure is designed to facilitate the testing and grading of student submitted Java program:
 
-* list-examples-grader
-  * lib
-    * hamcrest-core-1.3.jar
-    * junit-4.13.2.jar
-  * grade.sh
-  * GradeServer.java
-  * Server.java
-  * TestListExamples.java
-
+* `list-examples-grader`
+  * `lib`
+    * `hamcrest-core-1.3.jar`
+    * `junit-4.13.2.jar`
+  * `grade.sh`
+  * `GradeServer.java`
+  * `Server.java`
+  * `TestListExamples.java`
 
 The main components are as follows:
 
@@ -41,6 +40,8 @@ The main components are as follows:
 `TestListExample.java`: This file contains JUnit tests for the ListExamples class. It includes a custom implementation of the StringChecker interface, IsMoon, and a test method testMergeRightEnd to verify the correctness of the merge method in ListExamples.
 
 `grade.sh`: This bash script is used for automating the grading process. It performs various tasks such as cloning the student's submission from a repository, verifying the presence of the required Java files, compiling the Java files, running JUnit tests, and calculating the score based on test outcomes.
+
+It is noted that two more directories, `student-submission` and `grading-area` would be created under `list-examples-grader` by the `grade.sh` once it is ran. 
 
 **Java File**
 
