@@ -25,14 +25,14 @@ The objective of this lab is to simulate a debugging process for a Java program 
 The directory structure is designed to facilitate the testing and grading of student submitted Java program. 
 
 > list-examples-grader
->       lib
->               hamcrest-core-1.3.jar
->               junit-4.13.2.jar
->       grade.sh
->       GradeServer.java
->       Server.java
->       TestListExamples.java
-> 
+  > lib
+    > hamcrest-core-1.3.jar
+  > junit-4.13.2.jar
+  > grade.sh
+  > GradeServer.java
+  > Server.java
+  > TestListExamples.java
+
 
 The main components are as follows:
 
