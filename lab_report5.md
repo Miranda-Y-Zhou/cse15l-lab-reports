@@ -219,13 +219,94 @@ After running `grade.sh` using [this student submission repository](https://gith
 
 #### Trying Out TA's Suggestions
 
-The student went on adding a few echo statements to print out `tests_run`, `failures`, and `correct`. 
+The student went on adding a few echo statements to `grade.sh` to print out `tests_run`, `failures`, and `correct`. 
 The student also viewed the contents of `junit_output.txt` file usinig `cat` command as suggested by the TA.
 
 ![output after suggestion](Images/Screen Shot lab 5-2.png)
 
 It's noted that the variables `tests_run` and `failures` were empty, therefore resulting in the division by zero error.
 Upon further inspection of the `junit_output.txt` file, it's found that when all JUnit tests succeed, the output is simply `OK (1 test)` and does not explicitly state the number of tests run and failed, unlike when there are failing tests. This difference in output format when no tests fail is likely why the script isn't capturing the number of tests correctly, since the `grep` command cannot find the correct patterns therefore cannot assign the variables.
+
+#### Fixed Code
+
+To resolve the bug, the student introduced an `if` statement to `grade.sh` to handle scenarios where no JUnit tests failed. This addition ensures that the `grep` commands for extracting the number of tests and errors are bypassed when all tests pass. In such cases, the script automatically assigns a score of `100%`, effectively addressing the issue of handling different output formats for successful test runs.
+
+The fixed `grade.sh`:
+
+```
+CPATH='.:../lib/hamcrest-core-1.3.jar:../lib/junit-4.13.2.jar'
+
+# clean up any previous student submissions and grading areas
+rm -rf student-submission
+rm -rf grading-area
+
+# Create a new grading area
+mkdir grading-area
+
+# Git clone the student repository 
+git clone $1 student-submission
+echo 'Finished cloning'
+
+# Define variables for file path
+DIR_NAME="student-submission"
+FILE_NAME="ListExamples.java"
+FILE_PATH="student-submission/ListExamples.java"
+
+# Check if the expected file exists
+if [ ! -f "student-submission/ListExamples.java" ]; then
+    # Provide feedback and exit if the file does not exist
+    echo "Error: Expected file '$FILE_NAME' not found in the submission."
+    exit 1
+fi
+
+echo "Student code has the correct file submitted."
+
+# Copy relevent files for grading into grading-area
+cp "student-submission/ListExamples.java" "grading-area"
+cp "TestListExamples.java" "grading-area"
+cp "GradeServer.java" "grading-area"
+cp "Server.java" "grading-area"
+
+echo "All java files are copied into the grading-area directory"
+
+# Change working directory into grading area
+cd grading-area
+
+# Complie all the java files
+javac -cp $CPATH *.java &> "javac_output.txt"
+
+# Check the exit status of the last command (javac)
+if [ $? -ne 0 ]; then
+    echo "Compilation failed:"
+    grep "error" javac_output.txt
+    exit 1
+else
+    echo "Compilation successful."
+fi
+
+# Run JUnit Tests
+java -cp $CPATH org.junit.runner.JUnitCore TestListExamples &> "junit_output.txt"
+
+# Calculate grade
+if [ $? -eq 0 ]; then
+    echo "All test passed."
+    echo "Score: 100%"
+    exit 0
+fi
+
+tests_run=$(grep -o 'run: [0-9]*' junit_output.txt | grep -o '[0-9]*')
+failures=$(grep -o 'Failures: [0-9]*' junit_output.txt | grep -o '[0-9]*')
+correct=$((tests_run-failures))
+
+echo "Test run:" $tests_run "failed:" $failures "correct:" $correct
+echo "Score:" $((correct/tests_run))"%"
+
+# Back to original directory
+cd ..
+
+```
+
+The terminal output from running `bash grade.sh https://github.com/ucsd-cse15l-f22/list-methods-corrected` is now as desired:
 
 
 
