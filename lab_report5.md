@@ -201,9 +201,17 @@ cd ..
 
 The output of running `grade.sh` using [this student submission repository](https://github.com/ucsd-cse15l-f22/list-methods-corrected) to test the bash script is shown below:
 
-![output1]()
+![output1](Images/Screen Shot lab 5-1.png)
+
+The input: `bash grade.sh https://github.com/ucsd-cse15l-f22/list-methods-corrected`
+
+The expected output after `Compilation successful.`: `Score: 100%`
+
+The actual output after `Compilation successful.`: `grade.sh: line 72: correct/tests_run: division by 0 (error token is "tests_run")`
 
 #### Student's EdStem Post
+
+
 
 #### TA's EdStem Posts
 
