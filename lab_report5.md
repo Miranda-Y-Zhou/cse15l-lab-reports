@@ -219,6 +219,14 @@ After running `grade.sh` using [this student submission repository](https://gith
 
 #### Trying Out TA's Suggestions
 
+The student went on adding a few echo statements to print out `tests_run`, `failures`, and `correct`. 
+The student also viewed the contents of `junit_output.txt` file usinig `cat` command as suggested by the TA.
+
+![output after suggestion](Images/Screen Shot lab 5-2.png)
+
+It's noted that the variables `tests_run` and `failures` were empty, therefore resulting in the division by zero error.
+Upon further inspection of the `junit_output.txt` file, it's found that when all JUnit tests succeed, the output is simply `OK (1 test)` and does not explicitly state the number of tests run and failed, unlike when there are failing tests. This difference in output format when no tests fail is likely why the script isn't capturing the number of tests correctly, since the `grep` command cannot find the correct patterns therefore cannot assign the variables.
+
 
 
 &nbsp;
